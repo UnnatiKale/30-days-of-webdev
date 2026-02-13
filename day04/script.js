@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dee49a1432a428671d2764ed7f6064cb&units=metric`
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=api_key&units=metric`
         );
 
         const data = await response.json();
@@ -138,3 +138,4 @@ async function getForecast(city) {
         console.log("Forecast error");
     }
 }
+
