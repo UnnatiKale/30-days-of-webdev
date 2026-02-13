@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Weather Forecast</h1>
+
+    <div class="weather">
+
+        <form id="weatherForm">
+            <label>City</label>
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <button id="themeToggle">Toggle Theme</button>
+
+        <div id="loading" class="hidden"></div>
+
+        <div id="weatherForecast" class="hidden">
+            <img id="weatherIcon" alt="Weather Icon" />
+            <h2 id="cityName"></h2>
+            <h3 id="temperature"></h3>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+
+        <div id="outfitSuggestion"></div>
+
+        <div id="forecastContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
